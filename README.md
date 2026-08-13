@@ -28,8 +28,8 @@ behaviour and responses are identical.
 ## Install
 
 ```powershell
-# from the repo root
-Copy-Item -Recurse .\SymantecvipUserManager "$HOME\Documents\PowerShell\Modules\"
+# Install the module from powershellGallery
+Install-module SymantecvipUserManager -Scope CurrentUser -Force
 Import-Module SymantecvipUserManager
 ```
 
