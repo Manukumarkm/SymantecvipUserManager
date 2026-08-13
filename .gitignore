@@ -1,0 +1,20 @@
+# Client certificates and credentials
+*.pfx
+*.p12
+*.pem
+*.key
+*.crt
+
+# Run-time artifacts (produced by the example scripts)
+delete-users-results-*.csv
+vip-user-backups/
+Backup/
+
+# PowerShell / editor cruft
+*.log
+.vscode/
+.vs/
+
+# OS files
+Thumbs.db
+.DS_Store
