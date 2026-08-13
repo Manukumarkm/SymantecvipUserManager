@@ -17,8 +17,11 @@ behaviour and responses are identical.
 ## Requirements
 
 - Windows PowerShell 5.1 or PowerShell 7.x.
+  
 - A valid Symantec VIP client certificate in **PKCS#12** (`.p12` / `.pfx`) form,
-  with its private key. This is the same certificate the Java tool asks for.
+  follow the below document from Broadcom to download the certificate from Symantec VIP manager portal. 
+  https://knowledge.broadcom.com/external/article/150737/how-to-request-and-download-a-vip-certif.html
+  
 - Network egress to `services-auth.vip.symantec.com` and
   `userservices-auth.vip.symantec.com` on TCP 443.
 
