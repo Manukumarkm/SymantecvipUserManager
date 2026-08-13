@@ -1,0 +1,22 @@
+name: Publish
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    name: Publish
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up PowerShell
+        run: |
+          pwsh -Command "Install-Module -Name Az -Force -AllowClobber -Scope CurrentUser"
+          pwsh -Command "Install-Module -Name Pester -Force -AllowClobber -Scope CurrentUser"
+
+      - name: Publish
+        env:
+          APIKEY: ${{ secrets.APIKEY }}
+        run: |
+          powershell -Version 5.1 -File Publish.ps1
