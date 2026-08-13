@@ -1,0 +1,18 @@
+# One exception pattern per line. Blank lines and lines starting with '#'
+# are ignored. Matching is case-insensitive and supports the standard
+# PowerShell wildcards '*' and '?'.
+#
+# Any UserId in the input CSV that matches ANY line below will be skipped
+# (never deleted) and recorded as "SKIPPED" in the output result CSV.
+
+# Admin / service accounts - never delete
+ADM_*
+SVC_*
+BREAKGLASS_*
+
+# Specific individuals to keep (literal userIds)
+root_admin
+compliance_officer
+
+# Reserved / audit users (single-character wildcard example)
+AUD?T_*
