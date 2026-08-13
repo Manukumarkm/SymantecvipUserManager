@@ -11,7 +11,7 @@ behaviour and responses are identical.
 - `examples/` – ready-to-run sample scripts and CSV templates.
 - `tests/SymantecvipUserManager.Tests.ps1` – Pester tests that verify the generated SOAP
   bodies match the templates extracted from the JAR.
-- `docs/reverse-engineering.md` – notes on how the JAR was analysed and every
+- `docs/java-engineering.md` – notes on how the JAR was analysed and every
   operation / endpoint it exposes.
 
 ## Requirements
